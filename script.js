@@ -58,7 +58,7 @@
 // const para2= document.querySelectorAll('.info')
 // para2[0].textContent = "This is updated paragraph using getElementsByClassName."
 // para2[0].style.color = "green"
-// para2[1].style.color = "magenta"
+// para2[1].style.color = "magenta" 
 // para2[2].style.color = "cyan"
 // console.log(para2)
 // para2.forEach((ele) => console.log(ele))
@@ -260,3 +260,70 @@
 // }, 2000)
 // clearTimeout(id)
 // console.log("Second Line")
+
+
+
+
+// function print(name){  // Callback Function
+//     console.log("Hello World", name)
+// }
+
+// function greet(num){     // Higher-Order Function
+//     console.log("Good Morning")
+//     setTimeout(() => {
+//         console.log("Inside setTimeout")
+//         let firstname = "Anushka"
+//         num(firstname)
+//     }, 2000)
+    
+// }
+
+// greet(print)
+
+
+
+
+// console.log("Starting Homework...");
+
+// setTimeout(() => {
+//     console.log("Homework Completed!");
+//     console.log("Starting Dinner...");
+
+//     setTimeout(() => {
+//         console.log("Dinner Done!");
+//         console.log("Getting Ready to go out...");
+
+//         setTimeout(() => {
+//             console.log("Going to the playground!");
+//         }, 1000);
+//     }, 1500);
+// }, 2000);
+
+
+
+
+// function finishHomework(callback){
+//     console.log("Starting Homework...");
+//     setTimeout(() => {
+//         console.log("Homework Completed!");
+//         callback();
+//     }, 2000);
+// }
+
+// function haveDinner(callback){
+//     console.log("Starting Dinner...");
+//     setTimeout(() => {
+//         console.log("Dinner Done!");
+//         callback();
+//     }, 1500);
+// }
+// function goToPlayground(){
+//     console.log("Getting Ready to go out...");
+// }
+
+// // Chained in steps, but clearner
+// finishHomework(function(){
+//     haveDinner(function(){
+//         goToPlayground();
+//     });
+// });
