@@ -1,6 +1,25 @@
-/* #btn1 {
+ button{
     background-color: chocolate;
     color: white;
     width: 100px;
     height: 35px;
-} */
+} 
+
+.btn{
+    background-color: chocolate;
+    color: white;
+    width: 100px;
+    height: 35px;
+}
+
+li{
+    width: 300px;
+    background-color: lightgrey;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+}

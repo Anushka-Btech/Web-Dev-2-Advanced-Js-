@@ -327,3 +327,221 @@
 //         goToPlayground();
 //     });
 // });
+
+
+
+// const input = document.querySelector('#task')
+// const btn = document.querySelector(".btn")
+// const lists = document.querySelector(".list")
+
+// btn.addEventListener('click', (e) => {
+//     e.preventDefault()
+//     if(input.value===""){
+//         alert("Please enter a task")
+//         return
+//     }
+//     const li = document.createElement('li')
+//     const deleteBtn = document.createElement('button')
+//     deleteBtn.innerText = "Delete"
+//     li.innerText = input.value
+//     li.appendChild(deleteBtn)
+//     lists.appendChild(li)
+
+//     deleteBtn.addEventListener('click', () => {
+//         lists.removeChild(li)
+//     })
+//     input.value = ""
+// })
+
+
+// const p=new Promise(function(resolve,reject){
+//     //resolve()
+//     //reject()
+//     setTimeout(() => {
+//         let done=true;
+//         if(done){
+//             resolve()
+//         }else{
+//             reject()
+//         }
+//     }, 2000)
+// })
+// console.log(p)
+
+
+
+// const p=new Promise(function(resolve,reject){
+//     //resolve()
+//     //reject()
+//     setTimeout(() => {
+//         let done=true;
+//         if(done){
+//             resolve({name:"Anushka", age:18})
+//         }else{
+//             reject("network issue")
+//         }
+//     }, 5000)
+// })
+// p.then(function(data){
+//     console.log("Resolved",data)
+// }).catch(function(){
+//     console.log("Rejected",err)
+// }).finally(()=>{
+//     console.log("Promise is settled")
+// })
+
+
+
+// funtion doHomework(){
+//     const p=new Promise((resolve, reject)=>{
+//         setTimeout(() => {
+//             let done=true;
+//             if(done){
+//                 console.log("Homework Completed!");
+//             resolve("Homework completed");
+//             }else{
+//                 reject("Couldn't complete homework");
+//             }
+//         }, 5000);
+//     });
+//     return p
+// }
+
+
+// function haveDinner(){
+//     const p=new Promise((resolve, reject)=>{
+//         setTimeout(() => {
+//             let done=true;
+//             if(done){
+//                 console.log("Dinner Done!");
+//             resolve("Dinner done");
+//             }else{
+//                 reject("Couldn't have dinner");
+//             }
+//         }, 5000);
+//     });
+//     return p
+// }
+
+
+// function goToPlayground(){
+//     const p=new Promise((resolve, reject)=>{
+//         setTimeout(() => {
+//             let done=true;
+//             if(done){
+//                 console.log("Going to the playground!");
+//             resolve("Went to playground");
+//             }else{
+//                 reject("Couldn't go to playground");
+//             }
+//         }, 5000);
+//     });
+//     return p
+// }
+
+// doHomework().then((data) => {
+//     console.log(data);
+//     return haveDinner();
+// }).then((data) => {
+//     console.log(data);
+//     return goToPlayground();
+// }).then((data) => {
+//     console.log(data);
+// }).catch((err) => {
+//     console.log(err);
+// }).finally(() => {
+//     console.log("All tasks attempted");
+// });
+
+
+
+// console.log("First Line")
+// setTimeout(()=> {
+//     console.log("Inside setTimeout")
+// }, 0)
+// const p=new Promise((resolve, reject) => {
+//     resolve()
+// })
+// p.then(() => {
+//     console.log("Inside Promise")
+// }).catch(() => {
+//     console.log("Promise Catch")
+// })
+// console.log("Second Line")
+
+// const p2=new Promise((resolve, reject) => {
+//     resolve()
+// })
+// p2.then(() => {
+//     console.log("Inside second Promise")
+// }).catch(() => {
+//     console.log("Second Promise Catch")
+// })
+
+
+// function orderFood(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("Food Ordered")
+//             resolve("Food Ordered")
+//         }, 1000);
+//     })
+// }
+
+// function prepareFood(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("Food Prepared")
+//             resolve("Food Prepared")
+//         }, 1000);
+//     })
+// }
+
+// function deliverFood(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("Food Delivered")
+//             resolve("Food Delivered")
+//         }, 1000);
+//     })
+// }
+
+// async function Order(){
+//     const data=await orderFood()
+//     console.log(data)
+//     await prepareFood()
+//     await deliverFood()
+// }
+// Order()
+
+
+// orderFood().then((data) => {
+//     console.log(data)
+//     return prepareFood()
+// }).then((data) => {
+//     console.log(data)
+//     return deliverFood()
+// }).then((data) => {
+//     console.log(data)
+// }).catch((err) => {
+//     console.log(err)
+// })
+
+
+
+console.log("first line")
+try{
+    let age=18
+    if(age<18){
+        //error
+        throw new Error("Access Denied")
+    }
+}catch(error){
+    console.log(error)
+}finally{
+    console.log("fiinally block")
+}
+console.log("last line")
+
+
+
