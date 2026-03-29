@@ -529,19 +529,82 @@
 
 
 
-console.log("first line")
-try{
-    let age=18
-    if(age<18){
-        //error
-        throw new Error("Access Denied")
-    }
-}catch(error){
-    console.log(error)
-}finally{
-    console.log("fiinally block")
+// console.log("first line")
+// try{
+//     let age=18
+//     if(age<18){
+//         //error
+//         throw new Error("Access Denied")
+//     }
+// }catch(error){
+//     console.log(error)
+// }finally{
+//     console.log("fiinally block")
+// }
+// console.log("last line")
+
+
+
+// async function sendData(){
+//     try{
+//         const response=await fetch('https://dummyjson.com/products/add',{
+//             method:'POST',
+//             headers:{'content-type':'application/json'},
+//             body:JSON.stringify({
+//                 title:'iPhone 9',
+//                 description:'An apple mobile which is nothing like apple',
+//                 price:54000,
+//                 discountPercentage:12.96,
+//                 rating:4.69,
+//                 stock:94,
+//                 brand:'Apple',
+//             })
+//         })
+
+//         const data=await response.json()
+//         console.log(data)
+//     }catch(error){
+//         console.log("Data not found")
+//     }
+// }
+// sendData()
+
+
+
+let obj = {
+    name: "Anushka",
+    age: 18,
+    city: "Bhiwadi"
 }
-console.log("last line")
+
+// localStorage.setItem('obj', JSON.stringify(obj))  // Storing the object as a string in localStorage
+// localStorage.setItem('name', 'Anushka')
+// localStorage.setItem('age', 18)
+// console.log(localStorage.getItem('name'))
+// console.log(localStorage.getItem('age'))
+// console.log(JSON.parse(localStorage.getItem('obj')))  // Retrieving and parsing the object from localStorage
+
+// localStorage.removeItem('age')  // Removing the 'age' item from localStorage
+
+
+
+// sessionStorage.setItem("obj", JSON.stringify(obj))  
+// sessionStorage.setItem('name', 'Anushka')
+// sessionStorage.setItem('age', 18)
+// console.log(sessionStorage.getItem('name'))
+// console.log(sessionStorage.getItem('age'))
+// console.log(JSON.parse(sessionStorage.getItem('obj')))
+// sessionStorage.removeItem('age')
+
+
+// document.cookie = "name=Anushka; expires=Fri, 31 Dec 2024 23:59:59 UTC"
+// document.cookie = "age=18; expires=Fri, 31 Dec 2024 23:59:59 UTC"
+// console.log(document.cookie) // Logs all cookies for the current domain
+
+// async function sample(){
+//     await fetch('http://127.0.0.1:5500/index.html')
+//  }
+//  sample()
 
 
 
