@@ -7,6 +7,7 @@ import {add,subtract} from './utility'
 import Sample from './component/Sample'
 import HomePage from './component/HomePage'
 import Contact from './component/Contact'
+import { Route, Router } from 'react-router-dom'
 
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
 
   return (
     <>
+
+    <Routes>
+      <Route path="/" element={<HomePage/>} />
       <Sample count={count} setCount={setCount}/>
       <HomePage/>
       <Contact/>
